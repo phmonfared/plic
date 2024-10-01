@@ -95,7 +95,7 @@ module ahb3lite_master_bfm #(
 
   task automatic write (
     input     [HADDR_SIZE-1:0] address,
-    const ref [HDATA_SIZE-1:0] data[],
+    ref [HDATA_SIZE-1:0] data[],
     input     [           2:0] size,
     input     [           2:0] burst
   );
